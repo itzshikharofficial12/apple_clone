@@ -23,13 +23,13 @@ function App() {
       </section>
 
       {/* Product Section 1 */}
-      <section className="py-16 px-6 bg-gray-50">
+      {/* <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4">Laptop Pro</h2>
           <p className="text-lg text-gray-600 text-center mb-8">Powerful performance meets stunning design</p>
-          <img src="https://via.placeholder.com/800x400" alt="Laptop Pro" className="mx-auto rounded-lg shadow-lg" />
+          <img src="https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mbp14-m4-2024.png" alt="Laptop Pro" className="mx-auto w-[950px]" />
         </div>
-      </section>
+      </section> */}
 
       {/* Product Section 2 */}
       <section className="py-16 px-6">
@@ -37,6 +37,7 @@ function App() {
           <h2 className="text-4xl font-bold text-center mb-4">Smart Watch</h2>
           <p className="text-lg text-gray-600 text-center mb-8">Your health and fitness companion</p>
           <img src="https://via.placeholder.com/600x400" alt="Smart Watch" className="mx-auto rounded-lg shadow-lg" />
+          
         </div>
       </section>
 
@@ -91,7 +92,7 @@ function App() {
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-gray-300 text-center text-gray-600">
-            <p>Copyright © 2024 Apple Inc. All rights reserved.</p>
+            <p>Copyright © 2026 Apple Inc. All rights reserved.</p>
           </div>
         </div>
       </footer>
