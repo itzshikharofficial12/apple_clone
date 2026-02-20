@@ -1,9 +1,17 @@
+import video1 from './assets/video1.mp4'
+import LT from './assets/LT.png'
+import LB from './assets/LB.png'
+import RB from './assets/RB.png'
+import RT from './assets/RT.png'
+
 function App() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Navbar */}
+
       <nav className="flex justify-between items-center px-6 py-4 border-b border-gray-200">
-        <div className="text-2xl font-bold">Apple</div>
+        <div className="text-2xl font-bold">
+          <img className="w-[60px]" src="https://1000logos.net/wp-content/uploads/2017/02/Apple-Logo.png" alt="" />
+        </div>
         <div className="flex space-x-6">
           <a href="#" className="text-gray-700 hover:text-black">Store</a>
           <a href="#" className="text-gray-700 hover:text-black">Mac</a>
@@ -13,7 +21,7 @@ function App() {
         </div>
       </nav>
 
-      {/* Hero Section */}
+
       <section className="text-center py-20 px-6">
         <h1 className="text-5xl font-bold mb-4">iPhone</h1>
         <p className="text-xl text-gray-600 mb-8">Say hello to the latest generation iPhone</p>
@@ -22,35 +30,21 @@ function App() {
         <img src="https://www.pngall.com/wp-content/uploads/17/iPhone-17-Enhanced-Audio-Quality-PNG.png" alt="Phone X" className="w-[950px] mx-auto " />
       </section>
 
-      {/* Product Section 1 */}
-      {/* <section className="py-16 px-6 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-4">Laptop Pro</h2>
-          <p className="text-lg text-gray-600 text-center mb-8">Powerful performance meets stunning design</p>
-          <img src="https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mbp14-m4-2024.png" alt="Laptop Pro" className="mx-auto w-[950px]" />
-        </div>
-      </section> */}
-
-      {/* Product Section 2 */}
-      <section className="py-16 px-6">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-4">Smart Watch</h2>
-          <p className="text-lg text-gray-600 text-center mb-8">Your health and fitness companion</p>
-          <img src="https://via.placeholder.com/600x400" alt="Smart Watch" className="mx-auto rounded-lg shadow-lg" />
-          
-        </div>
+      <section>
+        <video src={video1} autoPlay loop muted playsInline className="w-full" playbackRate="5.0"></video>
       </section>
 
-      {/* Product Section 3 */}
-      <section className="py-16 px-6 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-4">Tablet Air</h2>
-          <p className="text-lg text-gray-600 text-center mb-8">Thin, light, and powerful</p>
-          <img src="https://via.placeholder.com/700x400" alt="Tablet Air" className="mx-auto rounded-lg shadow-lg" />
-        </div>
+      <section className='flex gap-3 p-3'>
+        <div><img src={LT} alt=""/></div>
+        <div><img src={RT} alt="" /></div>
+      </section>
+      <section className='flex gap-3 p-3'>
+        <div><img src={LB} alt=""/></div>
+        <div><img src={RB} alt="" /></div>
       </section>
 
-      {/* Footer */}
+
+
       <footer className="bg-gray-100 py-12 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
